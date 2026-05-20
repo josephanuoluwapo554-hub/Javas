@@ -5,16 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Days Checker</title>
+
+  <style>
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #222;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkorange;
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-  <h1>Days In A Month Checker</h1>
+  <div class="container">
 
-  <!-- Button -->
-  <button onclick="checkDays()">
-    CheckDays
-  </button>
+    <h1>Days In A Month Checker</h1>
+
+    <p>
+      Click the button below to check
+      the number of days in a month.
+    </p>
+
+    <button onclick="checkDays()">
+      Open Days Checker
+    </button>
+
+  </div>
 
   <script src="./JS/month.js"></script>
 

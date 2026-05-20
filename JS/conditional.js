@@ -44,3 +44,11 @@ switch (weather) {
 let isGoing = true
 
 isGoing ? console.log("is going o") : console.log("it's not going ")
+
+
+// let number = prompt("Enter a number:");
+// if (number % 2 === 0) {
+//   console.log(number + " is an Even number");
+// }else if (number % 2 !== 0) {
+//   console.log(number + " is an Odd number");
+// }

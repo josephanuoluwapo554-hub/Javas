@@ -1,61 +1,49 @@
-// Ask user for month
-let month = prompt("Enter month name:");
+// FUNCTION
+function checkDays() {
 
-// Ask user for year
-let year = prompt("Enter year:");
+  // Ask user for month
+  let month = prompt("Enter month name:");
 
-// Convert month to lowercase
-month = month.toLowerCase();
+  // Convert month to lowercase
+  month = month.toLowerCase();
 
 
-// Check the month
-if (
-  month === "january" ||
-  month === "march" ||
-  month === "may" ||
-  month === "july" ||
-  month === "august" ||
-  month === "october" ||
-  month === "december"
-) {
-
-  alert(month + " has 31 days");
-
-}
-
-else if (
-  month === "april" ||
-  month === "june" ||
-  month === "september" ||
-  month === "november"
-) {
-
-  alert(month + " has 30 days");
-
-}
-
-else if (month === "february") {
-
-  // Leap year condition
+  // CONDITIONS
   if (
-    (year % 4 === 0 && year % 100 !== 0) ||
-    year % 400 === 0
+    month === "january" ||
+    month === "march" ||
+    month === "may" ||
+    month === "july" ||
+    month === "august" ||
+    month === "october" ||
+    month === "december"
   ) {
 
-    alert("February has 29 days");
+    console.log(month + " has 31 days");
+
+  }
+
+  else if (
+    month === "april" ||
+    month === "june" ||
+    month === "september" ||
+    month === "november"
+  ) {
+
+    console.log(month + " has 30 days");
+
+  }
+
+  else if (month === "february") {
+
+    console.log("February has 28 or 29 days");
 
   }
 
   else {
 
-    alert("February has 28 days");
+    console.log("Invalid month");
 
   }
-
-}
-
-else {
-
-  alert("Invalid month");
 
 }

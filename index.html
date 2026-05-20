@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./JS/conditional.js"></script>
+    <script src="./JS/function.js"></script>
 </head>
 <body>
     <button onclick="alert(Hello)">Say Hello</button>
+    <button onclick="greet()">Greet</button>
+    <button onclick="anu()">Anu</button>
+
+    <div id="myDiv">Hello, this is my div</div>
+    <div id="secondDiv"></div>
+
+    <input type="text" name="" id="myInput">
+    <button onclick="show()">Show Value</button>
+    <p id="output"></p>
 </body>
 </html>
+
+<script>
+    let div = document.getElementById("myDiv")
+    
+    let secondDiv = document.getElementById("secondDiv")
+    div.innerText = "This is a new text inside the div"
+    secondDiv.innerHTML = "<h1>Hello, this is innerHTML</h1>"
+
+let output = document.getElementById("output")
+function show() {
+    let myInput = document.getElementById("myInput").value
+
+    if (myInput == ""){
+    alert("please fill input")
+    }else {
+        output.innerText = myInput
+    }
+    
+}
+    
+console.log(div);
+</script>
